@@ -18,10 +18,11 @@ app.get('/tur', (request, response) => {
 
 // https 443
 // http 80
-app.listen(443, (err) => {
+const port = process.env.PORT || 3000;
+app.listen(port, (err) => {
     if(err){
         console.log('Não foi possivel inciar o servidor!')
     }else{
-        console.log('Servidor rodando...')
+        console.log('${port}: Servidor rodando...')
     }
 })
