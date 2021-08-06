@@ -23,6 +23,6 @@ app.listen(port, (err) => {
     if(err){
         console.log('Não foi possivel inciar o servidor!')
     }else{
-        console.log('${port}: Servidor rodando...')
+        console.log(port, ': Servidor rodando...')
     }
 })
